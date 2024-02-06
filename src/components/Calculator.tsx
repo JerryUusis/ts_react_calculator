@@ -13,7 +13,7 @@ const Calculator: React.FC = () => {
   };
 
   const handleInput = (value: string) => {
-    if (display === "Error") {
+    if (display === "Syntax error") {
       clearInput();
     } else {
       setDisplay(display + value);
@@ -33,7 +33,7 @@ const Calculator: React.FC = () => {
         setDisplay(result.toFixed(3));
       }
     } catch (error) {
-      setDisplay("Error");
+      setDisplay("Syntax error");
     }
   };
 
@@ -41,21 +41,23 @@ const Calculator: React.FC = () => {
     <Container
       sx={{
         display: "flex",
-        justifyContent: "center",
         flexDirection: "column",
+        justifyContent: "center",
         alignItems: "center",
+        maxWidth: "350px", minWidth: "280px"
       }}
     >
       <OutlinedInput
         sx={{
           maxWidth: "350px",
           minWidth: "280px",
-          mb: "1rem"
+          my: "1rem",
+          width: "100%",
         }}
         value={display}
         readOnly
       />
-      <Grid container sx={{ maxWidth: "350px", minWidth: "280px" }}>
+      <Grid container >
         <Grid item xs={3}>
           <Box sx={columnStyle}>
             <Button variant="outlined" onClick={() => clearInput()}>
@@ -86,7 +88,6 @@ const Calculator: React.FC = () => {
             <Button variant="contained" onClick={() => handleInput("0")}>
               0
             </Button>
-            
           </Box>
         </Grid>
         <Grid item xs={3}>
@@ -103,7 +104,6 @@ const Calculator: React.FC = () => {
             <Button variant="outlined" onClick={() => handleInput("+")}>
               +
             </Button>
-            
           </Box>
         </Grid>
         <Grid item xs={3}>

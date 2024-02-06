@@ -6,16 +6,14 @@ import { createTheme, ThemeProvider } from '@mui/material'
 const theme = createTheme({
   typography: {
     h1: {
-      fontSize: "2.5em"
+      fontSize: "2.2em"
     }
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          padding: "0.125em",
           margin: "0.125em",
-          width:"auto",
           maxHeight:"2em"
         }
       }
