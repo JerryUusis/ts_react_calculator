@@ -83,9 +83,10 @@ const Calculator: React.FC = () => {
             <Button variant="contained" onClick={() => handleInput("1")}>
               1
             </Button>
-            <Button variant="outlined" onClick={() => handleInput("+")}>
-              +
+            <Button variant="contained" onClick={() => handleInput("0")}>
+              0
             </Button>
+            
           </Box>
         </Grid>
         <Grid item xs={3}>
@@ -99,9 +100,10 @@ const Calculator: React.FC = () => {
             <Button variant="contained" onClick={() => handleInput("2")}>
               2
             </Button>
-            <Button variant="outlined" onClick={() => handleCalculate()}>
-              =
+            <Button variant="outlined" onClick={() => handleInput("+")}>
+              +
             </Button>
+            
           </Box>
         </Grid>
         <Grid item xs={3}>
@@ -115,8 +117,8 @@ const Calculator: React.FC = () => {
             <Button variant="contained" onClick={() => handleInput("3")}>
               3
             </Button>
-            <Button variant="contained" onClick={() => handleInput("0")}>
-              0
+            <Button variant="outlined" onClick={() => handleCalculate()}>
+              =
             </Button>
           </Box>
         </Grid>
