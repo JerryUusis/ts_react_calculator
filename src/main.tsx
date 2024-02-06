@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from '@mui/material'
 const theme = createTheme({
   typography: {
     h1: {
-      fontSize: "3em"
+      fontSize: "2.5em"
     }
   },
   components: {
@@ -17,6 +17,13 @@ const theme = createTheme({
           margin: "0.125em",
           width:"auto",
           maxHeight:"2em"
+        }
+      }
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          pointerEvents: "none",
         }
       }
     }
