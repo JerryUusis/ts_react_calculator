@@ -44,7 +44,7 @@ const Calculator: React.FC = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-
+        maxWidth: "350px"
       }}
     >
       <OutlinedInput
@@ -106,7 +106,7 @@ const Calculator: React.FC = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} >
           <Box sx={columnStyle}>
             <Button variant="contained" onClick={() => handleInput("9")}>
               9
