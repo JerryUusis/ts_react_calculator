@@ -21,7 +21,7 @@ The application has been deployed using Netlify. You can access it [here](https:
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/JerryUusis/ts_react_calculator.git
 ```
 
 2. Install dependencies:
