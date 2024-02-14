@@ -2,6 +2,8 @@
 
 This is a simple calculator application built using TypeScript and React. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
+The application has been deployed using Netlify. You can access it [here](https://cheery-bunny-827017.netlify.app/).
+
 ## Features
 
 - **Basic Arithmetic Operations**: Users can perform addition, subtraction, multiplication, and division using the calculator.
@@ -19,7 +21,7 @@ This is a simple calculator application built using TypeScript and React. It all
 1. Clone the repository:
 
 ```bash
-    git clone <repository-url>
+git clone <repository-url>
 ```
 
 2. Install dependencies:
