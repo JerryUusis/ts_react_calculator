@@ -44,7 +44,7 @@ const Calculator: React.FC = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        maxWidth: "350px", minWidth: "280px"
+
       }}
     >
       <OutlinedInput

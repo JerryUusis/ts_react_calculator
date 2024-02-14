@@ -14,7 +14,6 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           margin: "0.125em",
-          maxHeight:"2em"
         }
       }
     },

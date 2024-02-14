@@ -11,7 +11,13 @@ const App: React.FC = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        maxWidth: "500px !important"
+        maxWidth: {
+          xs:"400px !important",
+          sm:"400px !important",
+          md:"400px !important",
+          lg:"400px !important",
+          xl:"400px !important",
+        },
       }}
     >
       <Typography variant="h1">React/TS Calculator</Typography>
